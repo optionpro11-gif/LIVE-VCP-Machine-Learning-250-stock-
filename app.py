@@ -23,9 +23,8 @@ st.set_page_config(
 # CONFIG & PATHS
 # ─────────────────────────────────────────────────────────────────────────────
 BASE_DIR      = os.path.dirname(__file__)
-ML_DIR        = os.path.join(BASE_DIR, "ml_vcp")
-MODEL_FILE    = os.path.join(ML_DIR, "models", "vcp_xgb_model.pkl")
-PARQUET_FILE  = os.path.join(ML_DIR, "data", "vcp_features_labeled.parquet")
+MODEL_FILE    = os.path.join(BASE_DIR, "vcp_xgb_model.pkl")
+PARQUET_FILE  = os.path.join(BASE_DIR, "vcp_features_labeled.parquet")
 PLAYBOOK_FILE = os.path.join(BASE_DIR, "SWING_STRATEGY_PLAYBOOK.md")
 
 TICKERS_250 = [
